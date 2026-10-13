@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Invites | Elegant Physical &amp; Digital Invitations</title>
+    <meta name="description" content="Discover elegant physical invitation cards and personalized digital invitations for weddings, birthdays, graduations, baptisms, and every special occasion.">
+    <meta property="og:title" content="Eternal Invites | Elegant Physical & Digital Invitations">
+    <meta property="og:description" content="Elegant physical invitation cards and personalized digital invitations for every special occasion. Your Story, Beautifully Invited.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/logo/logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons (Lucide, pinned version) -->
+    <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js" defer></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Scripts -->
+    <script src="js/config.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- ============================== HEADER ============================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Eternal Invites — Home">
+                <img src="assets/images/logo/logo.png" alt="Eternal Invites logo" width="52" height="52">
+                <span class="brand-text">Eternal <em>Invites</em></span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" data-page="index">Home</a></li>
+                    <li><a href="services.html" data-page="services">Services</a></li>
+                    <li><a href="gallery.html" data-page="gallery">Gallery</a></li>
+                    <li><a href="order.html" data-page="order">Order Now</a></li>
+                    <li><a href="about.html" data-page="about">About Us</a></li>
+                    <li><a href="contact.html" data-page="contact">Contact Us</a></li>
+                </ul>
+                <a href="order.html" class="btn btn-gold btn-order-mobile">Order Now</a>
+            </nav>
+            <a href="order.html" class="btn btn-gold btn-sm header-cta">Order Now</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- =============================== HERO =============================== -->
+    <section class="hero" id="home">
+        <div class="hero-glow hero-glow--1 pulse-glow"></div>
+        <div class="hero-glow hero-glow--2 pulse-glow"></div>
+        <div class="container hero-grid">
+
+            <div class="hero-copy">
+                <span class="hero-label hero-fade">CARD &amp; DIGITAL INVITATIONS</span>
+                <h1 class="hero-fade hero-fade--d1">Every Occasion Deserves an <em>Eternal</em> Invitation.</h1>
+                <p class="hero-lead hero-fade hero-fade--d2">From beautifully crafted invitation cards to unforgettable digital invitations, we bring your special moments to life with creativity, elegance, and a personal touch.</p>
+                <p class="hero-tagline hero-fade hero-fade--d3">Your Story, Beautifully Invited.</p>
+                <div class="hero-actions hero-fade hero-fade--d4">
+                    <a href="#featured" class="btn btn-gold">Explore Our Designs</a>
+                    <a href="order.html" class="btn btn-outline-gold">Create Your Invitation</a>
+                </div>
+            </div>
+
+            <div class="hero-visual hero-fade hero-fade--d3" aria-hidden="false">
+                <!-- Physical card -->
+                <div class="hero-card hero-card--physical float">
+                    <img src="assets/images/physical-invitations/card5.jpg" alt="Cream and gold embossed wedding invitation cards with ivory satin bows" width="620" height="800">
+                </div>
+                <!-- Cream floral card -->
+                <div class="hero-card hero-card--cream float float--slow">
+                    <img src="assets/images/physical-invitations/card3.jpg" alt="White and gold wedding invitation with gold monogram" width="520" height="700">
+                </div>
+                <!-- Smartphone: digital invitation demo -->
+                <div class="phone-mockup float">
+                    <div class="phone-screen">
+                        <img src="assets/images/digital-invitations/digital-feven.jpg" alt="Digital wedding invitation example on a smartphone">
+                        <div class="phone-overlay">
+                            <div class="phone-names">Endriyas &amp; Feven</div>
+                            <div class="phone-date">Sample · Wedding Day</div>
+                            <div class="phone-countdown">
+                                <span>128d</span><span>06h</span><span>42m</span>
+                            </div>
+                            <span class="phone-rsvp">RSVP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#services" class="hero-scroll bounce-soft">
+            Scroll
+            <i data-lucide="chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ============================ SERVICES ============================== -->
+    <section class="section section--cream" id="services">
+        <div class="container">
+            <header class="section-head reveal">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Two Ways to Invite, One <em>Timeless</em> Experience</h2>
+                <p class="section-sub">Choose the elegance of a printed card your guests can hold, or the convenience of a digital invitation they can open anywhere.</p>
+            </header>
+
+            <div class="services-split">
+                <!-- Physical -->
+                <article class="service-card reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/physical-invitations/card1.jpg" alt="Traditional Ethiopian wedding invitation card with satin bow held over greenery" loading="lazy">
+                        <span class="service-card-tag">Printed &amp; Personal</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Physical Invitation Cards</h3>
+                        <p>Beautifully designed printed invitations for those who appreciate the elegance of a tangible invitation.</p>
+                        <ul class="service-card-features">
+                            <li>Wedding cards</li>
+                            <li>Birthday cards</li>
+                            <li>Graduation cards</li>
+                            <li>Baptism cards</li>
+                            <li>Engagement cards</li>
+                            <li>Anniversary cards</li>
+                            <li>Baby shower cards</li>
+                            <li>Custom event stationery</li>
+                        </ul>
+                        <a href="gallery.html?type=physical" class="btn btn-dark">Explore Invitation Cards</a>
+                    </div>
+                </article>
+
+                <!-- Digital -->
+                <article class="service-card reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/digital-invitations/digital-minas.jpg" alt="Digital wedding invitation viewed on a smartphone" loading="lazy">
+                        <span class="service-card-tag">Interactive &amp; Shareable</span>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Digital Invitations</h3>
+                        <p>Interactive, shareable digital invitations that bring your celebration to life and allow guests to access your event details from anywhere.</p>
+                        <ul class="service-card-features">
+                            <li>Opening animations</li>
+                            <li>Couple &amp; event photos</li>
+                            <li>Countdown timers</li>
+                            <li>Event information</li>
+                            <li>Location &amp; directions</li>
+                            <li>Event schedules</li>
+                            <li>RSVP forms</li>
+                            <li>Guest wishes</li>
+                            <li>Background music</li>
+                        </ul>
+                        <p class="service-card-note">Available features depend on the selected package.</p>
+                        <a href="gallery.html?type=digital" class="btn btn-dark">Explore Digital Invitations</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ OCCASIONS ============================= -->
+    <section class="section section--black" id="occasions">
+        <div class="container">
+            <header class="section-head reveal">
+                <span class="section-label">Occasions</span>
+                <h2 class="section-title">An Invitation for Every <em>Special Moment</em></h2>
+                <p class="section-sub">Whatever you are celebrating, we design the perfect first impression.</p>
+            </header>
+
+            <div class="occasions-grid">
+                <a class="occasion-card reveal" href="gallery.html?occasion=wedding">
+                    <img src="assets/images/occasions/wedding.jpg" alt="Bridal couple celebrating their wedding" loading="lazy">
+                    <div class="occasion-card-overlay">
+                        <h3>Weddings</h3>
+                        <span class="occasion-link">View Designs <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+                <a class="occasion-card reveal" href="gallery.html?occasion=birthday">
+                    <img src="assets/images/occasions/birthday.jpg" alt="Balloons at a birthday celebration" loading="lazy">
+                    <div class="occasion-card-overlay">
+                        <h3>Birthdays</h3>
+                        <span class="occasion-link">View Designs <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+                <a class="occasion-card reveal" href="gallery.html?occasion=graduation">
+                    <img src="assets/images/occasions/graduation.jpg" alt="Graduation caps thrown in celebration" loading="lazy">
+                    <div class="occasion-card-overlay">
+                        <h3>Graduations</h3>
+                        <span class="occasion-link">View Designs <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+                <a class="occasion-card reveal" href="gallery.html?occasion=baptism">
+                    <img src="assets/images/occasions/baptism.jpg" alt="Serene church interior for a baptism" loading="lazy">
+                    <div class="occasion-card-overlay">
+                        <h3>Baptisms</h3>
+                        <span class="occasion-link">View Designs <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+                <a class="occasion-card reveal" href="gallery.html?occasion=engagement">
+                    <img src="assets/images/occasions/engagement.jpg" alt="Couple celebrating their engagement" loading="lazy">
+                    <div class="occasion-card-overlay">
+                        <h3>Engagements</h3>
+                        <span class="occasion-link">View Designs <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+                <a class="occasion-card reveal" href="gallery.html?occasion=anniversary">
+                    <img src="assets/images/occasions/anniversary.jpg" alt="Elegant table set for an anniversary dinner" loading="lazy">
+                    <div class="occasion-card-overlay">
+                        <h3>Anniversaries</h3>
+                        <span class="occasion-link">View Designs <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+                <a class="occasion-card reveal" href="gallery.html?occasion=baby-shower">
+                    <img src="assets/images/occasions/babyshower.jpg" alt="Soft pastel decorations for a baby shower" loading="lazy">
+                    <div class="occasion-card-overlay">
+                        <h3>Baby Showers</h3>
+                        <span class="occasion-link">View Designs <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+                <a class="occasion-card reveal" href="gallery.html?occasion=other">
+                    <img src="assets/images/occasions/other.jpg" alt="Sparkler celebration for a special occasion" loading="lazy">
+                    <div class="occasion-card-overlay">
+                        <h3>Other Occasions</h3>
+                        <span class="occasion-link">View Designs <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= FEATURED DESIGNS ========================= -->
+    <section class="section section--cream" id="featured">
+        <div class="container">
+            <header class="section-head reveal">
+                <span class="section-label">Featured Designs</span>
+                <h2 class="section-title">Loved by Our <em>Clients</em></h2>
+                <p class="section-sub">A curated selection of physical cards and live digital invitations. Every design is fully personalized for your event.</p>
+            </header>
+
+            <div class="designs-grid" id="featuredGrid"><!-- rendered by js/main.js --></div>
+
+            <div class="gallery-load-more">
+                <button class="btn btn-outline-gold" id="featuredLoadMore">Load More Designs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================== WHY CHOOSE US ========================== -->
+    <section class="section section--white" id="why">
+        <div class="container">
+            <header class="section-head reveal">
+                <span class="section-label">Why Choose Eternal Invites?</span>
+                <h2 class="section-title">Crafted With <em>Care</em>, Designed for You</h2>
+            </header>
+
+            <div class="why-grid">
+                <article class="why-item reveal">
+                    <div class="why-icon"><i data-lucide="palette"></i></div>
+                    <h3>Creative and Unique Designs</h3>
+                    <p>Every invitation is created with attention to detail and visual elegance.</p>
+                </article>
+                <article class="why-item reveal">
+                    <div class="why-icon"><i data-lucide="pen-line"></i></div>
+                    <h3>Personalized Invitations</h3>
+                    <p>Customize names, wording, colors, photographs, and event details.</p>
+                </article>
+                <article class="why-item reveal">
+                    <div class="why-icon"><i data-lucide="party-popper"></i></div>
+                    <h3>Different Occasions</h3>
+                    <p>Find designs for weddings, birthdays, graduations, baptisms, and more.</p>
+                </article>
+                <article class="why-item reveal">
+                    <div class="why-icon"><i data-lucide="gem"></i></div>
+                    <h3>Elegant and Modern Styles</h3>
+                    <p>Explore timeless, minimalist, traditional, floral, and luxury designs.</p>
+                </article>
+                <article class="why-item reveal">
+                    <div class="why-icon"><i data-lucide="share-2"></i></div>
+                    <h3>Convenient Digital Sharing</h3>
+                    <p>Share digital invitations through messaging apps and social media.</p>
+                </article>
+                <article class="why-item reveal">
+                    <div class="why-icon"><i data-lucide="heart-handshake"></i></div>
+                    <h3>Friendly Customer Support</h3>
+                    <p>Get help selecting a design and submitting your invitation details.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================ HOW IT WORKS ========================== -->
+    <section class="section section--cream" id="how-it-works">
+        <div class="container">
+            <header class="section-head reveal">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">Simple, From <em>Idea</em> to Invitation</h2>
+            </header>
+
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Invitation</h3>
+                    <p>Choose a physical card or a digital invitation.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">2</div>
+                    <h3>Select Your Design</h3>
+                    <p>Browse existing designs or request a completely customized invitation.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">3</div>
+                    <h3>Share Your Details</h3>
+                    <p>Provide event information, preferred colors, photographs, and any special instructions.</p>
+                </div>
+                <div class="step reveal">
+                    <div class="step-number">4</div>
+                    <h3>Approve &amp; Receive</h3>
+                    <p>Review your design, request any agreed revisions, and receive your invitation according to the selected service.</p>
+                </div>
+            </div>
+            <p class="steps-note">Printing, delivery, revisions, and interactive features depend on the selected service and confirmed order.</p>
+        </div>
+    </section>
+
+    <!-- =============================== PACKAGES =========================== -->
+    <section class="section section--white" id="packages">
+        <div class="container">
+            <header class="section-head reveal">
+                <span class="section-label">Digital Invitation Packages</span>
+                <h2 class="section-title">Choose the Perfect <em>Experience</em> for Your Special Day</h2>
+                <p class="section-sub">Transparent pricing for digital invitations. For physical cards, we provide a personal quote.</p>
+            </header>
+
+            <div class="packages-grid" id="packagesGrid"><!-- rendered by js/main.js --></div>
+
+            <p class="package-note reveal">Prices in Ethiopian birr (ETB). Physical invitation cards: <strong>Request a Quote</strong> — pricing depends on design, quantity and finishing.</p>
+        </div>
+    </section>
+
+    <!-- ============================ TESTIMONIALS ========================== -->
+    <section class="section section--dark" id="testimonials">
+        <div class="container">
+            <header class="section-head reveal">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Our <em>Clients</em> Say</h2>
+            </header>
+
+            <!-- SAMPLE testimonials — clearly labelled placeholders until real
+                 customer reviews are supplied. Do not present these as real. -->
+            <div class="testimonial-wrap reveal">
+                <div class="testimonial-slider" id="testimonialSlider">
+                    <div class="testimonial-track">
+                        <div class="testimonial">
+                            <div class="testimonial-quote-icon"><i data-lucide="quote"></i></div>
+                            <blockquote>“Our guests kept talking about the invitation before the wedding even began. It felt like a preview of the day itself.”</blockquote>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-avatar" aria-hidden="true">S</div>
+                                <div>
+                                    <span class="testimonial-name">Sample Client<span class="sample-flag">Sample</span></span>
+                                    <span class="testimonial-occasion">Wedding</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-quote-icon"><i data-lucide="quote"></i></div>
+                            <blockquote>“The digital invitation was so easy to share. The countdown and RSVP features made planning our event effortless.”</blockquote>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-avatar" aria-hidden="true">M</div>
+                                <div>
+                                    <span class="testimonial-name">Sample Client<span class="sample-flag">Sample</span></span>
+                                    <span class="testimonial-occasion">Graduation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-quote-icon"><i data-lucide="quote"></i></div>
+                            <blockquote>“Elegant, warm and personal. They listened to every detail we wanted and the result was beyond beautiful.”</blockquote>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-avatar" aria-hidden="true">A</div>
+                                <div>
+                                    <span class="testimonial-name">Sample Client<span class="sample-flag">Sample</span></span>
+                                    <span class="testimonial-occasion">Baptism</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" id="tPrev" aria-label="Previous testimonial"><i data-lucide="chevron-left"></i></button>
+                    <div class="testimonial-dots" id="testimonialDots"></div>
+                    <button class="testimonial-btn" id="tNext" aria-label="Next testimonial"><i data-lucide="chevron-right"></i></button>
+                </div>
+                <p class="testimonial-disclaimer">These reviews are illustrative samples. Real client stories will appear here soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================ CTA =============================== -->
+    <section class="section section--cream cta" id="cta">
+        <div class="container reveal">
+            <div class="ornament" aria-hidden="true"><i data-lucide="flower-2"></i></div>
+            <h2>Let's Make Your Special Moment <em class="gold-text">Unforgettable</em>.</h2>
+            <p>Your celebration starts with the perfect invitation.</p>
+            <a href="order.html" class="btn btn-gold">Start Your Order</a>
+        </div>
+    </section>
+
+    <!-- =============================== FOOTER ============================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo/logo.png" alt="Eternal Invites logo" width="64" height="64">
+                    <div class="brand-name">Eternal <em>Invites</em></div>
+                    <p class="footer-tagline">Your Story, Beautifully Invited.</p>
+                    <p>Made with creativity for your unforgettable moments.</p>
+                    <div class="footer-social">
+                        <a data-social="tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok">
+                            <i data-lucide="music-2"></i>
+                        </a>
+                        <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a data-social="telegram" href="#" target="_blank" rel="noopener" aria-label="Telegram">
+                            <i data-lucide="send"></i>
+                        </a>
+                    </div>
+                </div>
+                <nav aria-label="Quick links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Service links">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html?type=physical">Physical Invitation Cards</a></li>
+                        <li><a href="gallery.html?type=digital">Digital Invitations</a></li>
+                        <li><a href="index.html#packages">Digital Packages</a></li>
+                        <li><a href="order.html">Custom Design Request</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i data-lucide="phone"></i><a data-contact="phone" href="#">0941187172</a></li>
+                        <li data-contact="email-wrap"><i data-lucide="mail"></i><a data-contact="email" href="#"></a></li>
+                        <li data-contact="location-wrap"><i data-lucide="map-pin"></i><span data-contact="location"></span></li>
+                        <li><i data-lucide="music-2"></i><a data-social="tiktok" href="#" target="_blank" rel="noopener"><span data-username>@eternal_invites</span></a></li>
+                        <li><i data-lucide="instagram"></i><a data-social="instagram" href="#" target="_blank" rel="noopener"><span data-username>@eternal_invites</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span data-year>2026</span> <span>Eternal Invites</span> — All rights reserved. Made with creativity for your unforgettable moments.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================= DESIGN DETAIL MODAL ====================== -->
+    <div class="modal-overlay" id="designModal" role="dialog" aria-modal="true" aria-label="Design details">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close design details"><i data-lucide="x"></i></button>
+            <div class="modal-grid">
+                <div class="modal-media"></div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

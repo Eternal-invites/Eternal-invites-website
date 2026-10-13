@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now | Eternal Invites</title>
+    <meta name="description" content="Order your physical invitation card or digital invitation from Eternal Invites. Choose a design, share your event details, and we will create something beautiful.">
+    <meta property="og:title" content="Order Now | Eternal Invites">
+    <meta property="og:description" content="Start your invitation order — physical cards and digital invitations for every occasion.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/config.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/order.js" defer></script>
+</head>
+<body>
+
+    <!-- ============================== HEADER ============================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Eternal Invites — Home">
+                <img src="assets/images/logo/logo.png" alt="Eternal Invites logo" width="52" height="52">
+                <span class="brand-text">Eternal <em>Invites</em></span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" data-page="index">Home</a></li>
+                    <li><a href="services.html" data-page="services">Services</a></li>
+                    <li><a href="gallery.html" data-page="gallery">Gallery</a></li>
+                    <li><a href="order.html" data-page="order">Order Now</a></li>
+                    <li><a href="about.html" data-page="about">About Us</a></li>
+                    <li><a href="contact.html" data-page="contact">Contact Us</a></li>
+                </ul>
+                <a href="order.html" class="btn btn-gold btn-order-mobile">Order Now</a>
+            </nav>
+            <a href="order.html" class="btn btn-gold btn-sm header-cta">Order Now</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================= PAGE HERO ============================ -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label hero-fade">Order Now</span>
+            <h1 class="hero-fade hero-fade--d1">Create Your <em class="gold-text">Invitation</em></h1>
+            <p class="hero-fade hero-fade--d2">Tell us about your celebration. Every order is an inquiry — we confirm details, price and availability with you personally.</p>
+            <p class="breadcrumb hero-fade hero-fade--d3"><a href="index.html">Home</a> / Order Now</p>
+        </div>
+    </section>
+
+    <!-- ============================ ORDER FORM ============================ -->
+    <section class="section section--cream">
+        <div class="container">
+            <div class="form-layout">
+
+                <!-- --------------- FORM --------------- -->
+                <form id="orderForm" class="form-card" novalidate>
+
+                    <!-- Customer details -->
+                    <fieldset class="form-section">
+                        <legend class="form-section-title"><i data-lucide="user"></i> Your Details</legend>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="fullName">Full Name <span class="req">*</span></label>
+                                <input type="text" id="fullName" name="fullName" required autocomplete="name">
+                                <span class="field-error">Please enter your full name.</span>
+                            </div>
+                            <div class="form-field">
+                                <label for="phone">Phone Number <span class="req">*</span></label>
+                                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="e.g. 0911234567">
+                                <span class="field-error">Please enter a valid phone number.</span>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email Address <span class="opt">(optional)</span></label>
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+                                <span class="field-error">Please enter a valid email address.</span>
+                            </div>
+                            <div class="form-field">
+                                <label for="contactMethod">Preferred Contact Method</label>
+                                <select id="contactMethod" name="contactMethod">
+                                    <option value="phone-call">Phone Call</option>
+                                    <option value="telegram">Telegram</option>
+                                    <option value="whatsapp">WhatsApp</option>
+                                    <option value="email">Email</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Invitation selection -->
+                    <fieldset class="form-section">
+                        <legend class="form-section-title"><i data-lucide="mail-open"></i> Invitation Selection</legend>
+
+                        <div class="form-field form-field--full" style="margin-bottom:20px">
+                            <label>Invitation Type <span class="req">*</span></label>
+                            <div class="choice-row">
+                                <label class="choice-card">
+                                    <input type="radio" name="invitationType" value="physical">
+                                    <span class="choice-dot"></span>
+                                    <span class="choice-card-text">
+                                        <strong>Physical Card</strong>
+                                        <small>Printed — request a quote</small>
+                                    </span>
+                                </label>
+                                <label class="choice-card">
+                                    <input type="radio" name="invitationType" value="digital">
+                                    <span class="choice-dot"></span>
+                                    <span class="choice-card-text">
+                                        <strong>Digital Invitation</strong>
+                                        <small>From 4,500 birr</small>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="occasion">Occasion <span class="req">*</span></label>
+                                <select id="occasion" name="occasion" required>
+                                    <option value="">Select occasion</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="design">Selected Design</label>
+                                <select id="design" name="design">
+                                    <option value="">Select a design (optional)</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="customRequest">Custom Design Request?</label>
+                                <select id="customRequest" name="customRequest">
+                                    <option value="no">No — use an existing design</option>
+                                    <option value="yes">Yes — create a new design for me</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="prefStyle">Preferred Style</label>
+                                <input type="text" id="prefStyle" name="prefStyle" placeholder="e.g. luxury, floral, traditional">
+                            </div>
+                            <div class="form-field form-field--full">
+                                <label for="prefColors">Preferred Colors</label>
+                                <input type="text" id="prefColors" name="prefColors" placeholder="e.g. black & gold, blush & cream">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Event information -->
+                    <fieldset class="form-section">
+                        <legend class="form-section-title"><i data-lucide="calendar-heart"></i> Event Information</legend>
+                        <div class="form-grid">
+                            <div class="form-field form-field--full">
+                                <label for="eventNames">Name or Names to Display <span class="req">*</span></label>
+                                <input type="text" id="eventNames" name="eventNames" required placeholder="e.g. ዲ/ን እንድሪያስ & ወ/ሪት ፌቨን or Endriyas & Feven">
+                                <span class="field-error">Who is the invitation for?</span>
+                                <span class="form-hint">Amharic (አማርኛ) and English text are both welcome.</span>
+                            </div>
+                            <div class="form-field">
+                                <label for="eventDate">Event Date</label>
+                                <input type="text" id="eventDate" name="eventDate" placeholder="e.g. መስከረም 24, 2019 or Sep 24, 2026">
+                                <span class="form-hint">Enter the date in the calendar system and format you prefer.</span>
+                            </div>
+                            <div class="form-field">
+                                <label for="eventTime">Event Time</label>
+                                <input type="text" id="eventTime" name="eventTime" placeholder="e.g. 11:30 LT / 5:30 PM">
+                            </div>
+                            <div class="form-field form-field--full">
+                                <label for="venue">Venue or Location</label>
+                                <input type="text" id="venue" name="venue" placeholder="e.g. ኢስት ዌስት አዳራሽ — ጎፋ መብራት">
+                            </div>
+                            <div class="form-field form-field--full">
+                                <label for="program">Event Program</label>
+                                <textarea id="program" name="program" placeholder="List the program items and times, if any (e.g. arrival, ceremony, dinner, photos…)"></textarea>
+                            </div>
+                            <div class="form-field form-field--full">
+                                <label for="wording">Invitation Wording</label>
+                                <textarea id="wording" name="wording" placeholder="Paste the exact wording you would like on the invitation (any language)."></textarea>
+                            </div>
+                            <div class="form-field form-field--full">
+                                <label for="instructions">Additional Instructions</label>
+                                <textarea id="instructions" name="instructions" placeholder="Special requests, references, themes, verses, or anything else we should know."></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- PHYSICAL-ONLY FIELDS -->
+                    <fieldset class="form-section hidden" id="physicalFields">
+                        <legend class="form-section-title"><i data-lucide="printer"></i> Physical Card Details</legend>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="quantity">Quantity</label>
+                                <input type="number" id="quantity" name="quantity" min="1" placeholder="e.g. 100">
+                            </div>
+                            <div class="form-field">
+                                <label for="cardStyle">Preferred Card Style</label>
+                                <input type="text" id="cardStyle" name="cardStyle" placeholder="e.g. folded, flat, vellum wrap">
+                            </div>
+                            <div class="form-field">
+                                <label for="printingPrefs">Printing Preferences</label>
+                                <input type="text" id="printingPrefs" name="printingPrefs" placeholder="e.g. gold print, embossing">
+                            </div>
+                            <div class="form-field">
+                                <label for="envelope">Envelope Requirements <span class="opt">(if applicable)</span></label>
+                                <input type="text" id="envelope" name="envelope" placeholder="e.g. matching cream envelopes">
+                            </div>
+                            <div class="form-field">
+                                <label for="deliveryDate">Desired Delivery Date</label>
+                                <input type="text" id="deliveryDate" name="deliveryDate" placeholder="When do you need them by?">
+                            </div>
+                            <div class="form-field">
+                                <label for="deliveryPrefs">Delivery or Collection Preferences</label>
+                                <input type="text" id="deliveryPrefs" name="deliveryPrefs" placeholder="e.g. pick up / delivery">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- DIGITAL-ONLY FIELDS -->
+                    <fieldset class="form-section hidden" id="digitalFields">
+                        <legend class="form-section-title"><i data-lucide="smartphone"></i> Digital Invitation Details</legend>
+
+                        <div class="form-field form-field--full" style="margin-bottom:20px">
+                            <label>Package Selection <span class="req">*</span></label>
+                            <div class="package-selector" id="packageOptions"><!-- rendered by js/order.js --></div>
+                            <span class="form-hint">Each package includes exactly the features listed. Features outside your package may require an upgrade.</span>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="photoCount">Number of Photos</label>
+                                <input type="number" id="photoCount" name="photoCount" min="0" placeholder="per your package">
+                            </div>
+                            <div class="form-field">
+                                <label for="musicReq">Background Music</label>
+                                <select id="musicReq" name="musicReq" data-label="Background music">
+                                    <option value="no">Not required</option>
+                                    <option value="yes">Yes — I want music (Deluxe)</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="rsvpReq">RSVP Form</label>
+                                <select id="rsvpReq" name="rsvpReq" data-label="RSVP form">
+                                    <option value="no">Not required</option>
+                                    <option value="yes">Yes — collect guest replies (Deluxe)</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="wishesReq">Guests' Wishes</label>
+                                <select id="wishesReq" name="wishesReq" data-label="Guests' wishes">
+                                    <option value="no">Not required</option>
+                                    <option value="yes">Yes — guests can send wishes (Deluxe)</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="interactiveFeatures">Interactive Features Requested</label>
+                                <input type="text" id="interactiveFeatures" name="interactiveFeatures" placeholder="e.g. opening animation, photo gallery">
+                            </div>
+                            <div class="form-field">
+                                <label for="completionDate">Desired Completion Date</label>
+                                <input type="text" id="completionDate" name="completionDate" placeholder="When do you need it ready?">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Reference images -->
+                    <fieldset class="form-section">
+                        <legend class="form-section-title"><i data-lucide="image-plus"></i> Reference Images <span class="opt" style="letter-spacing:0;text-transform:none">(optional)</span></legend>
+                        <div class="form-field form-field--full">
+                            <label for="referenceFiles">Upload Reference Images or Photos</label>
+                            <input type="file" id="referenceFiles" name="referenceFiles" multiple accept="image/*">
+                            <span class="form-hint" id="fileHint">Send designs, color palettes or photos that inspire you.</span>
+                        </div>
+                    </fieldset>
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn btn-gold btn-block" id="orderSubmit" style="margin-top:8px">Submit Order Request</button>
+                    <p class="form-hint" style="text-align:center; margin-top:14px">
+                        Every order is an inquiry until we confirm the details, price and availability with you.
+                    </p>
+                    <div class="form-status" id="orderStatus" role="status" aria-live="polite"></div>
+                </form>
+
+                <!-- --------------- SUMMARY --------------- -->
+                <aside class="summary-card" aria-label="Order summary">
+                    <h3>Order Summary</h3>
+                    <ul class="summary-list">
+                        <li><span>Invitation Type</span><span id="sumType">Not selected</span></li>
+                        <li><span>Occasion</span><span id="sumOccasion">—</span></li>
+                        <li><span>Design</span><span id="sumDesign">—</span></li>
+                        <li id="sumPackageRow" class="hidden"><span>Package</span><span id="sumPackage">—</span></li>
+                        <li><span>Event Date</span><span id="sumDate">—</span></li>
+                        <li><span>Extra Features</span><span id="sumExtras">None selected</span></li>
+                    </ul>
+                    <div class="summary-total" id="sumPriceRow">
+                        <span>Price</span>
+                        <strong id="sumPrice">—</strong>
+                    </div>
+                    <p class="summary-note" id="summaryNote"></p>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================== FOOTER ============================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo/logo.png" alt="Eternal Invites logo" width="64" height="64">
+                    <div class="brand-name">Eternal <em>Invites</em></div>
+                    <p class="footer-tagline">Your Story, Beautifully Invited.</p>
+                    <p>Made with creativity for your unforgettable moments.</p>
+                    <div class="footer-social">
+                        <a data-social="tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+                        <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a data-social="telegram" href="#" target="_blank" rel="noopener" aria-label="Telegram"><i data-lucide="send"></i></a>
+                    </div>
+                </div>
+                <nav aria-label="Quick links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Service links">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html?type=physical">Physical Invitation Cards</a></li>
+                        <li><a href="gallery.html?type=digital">Digital Invitations</a></li>
+                        <li><a href="index.html#packages">Digital Packages</a></li>
+                        <li><a href="order.html">Custom Design Request</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i data-lucide="phone"></i><a data-contact="phone" href="#">0941187172</a></li>
+                        <li data-contact="email-wrap"><i data-lucide="mail"></i><a data-contact="email" href="#"></a></li>
+                        <li data-contact="location-wrap"><i data-lucide="map-pin"></i><span data-contact="location"></span></li>
+                        <li><i data-lucide="music-2"></i><a data-social="tiktok" href="#" target="_blank" rel="noopener"><span data-username>@eternal_invites</span></a></li>
+                        <li><i data-lucide="instagram"></i><a data-social="instagram" href="#" target="_blank" rel="noopener"><span data-username>@eternal_invites</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span data-year>2026</span> <span>Eternal Invites</span> — All rights reserved. Made with creativity for your unforgettable moments.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

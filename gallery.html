@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Eternal Invites</title>
+    <meta name="description" content="Browse the Eternal Invites gallery: physical invitation cards and live digital invitations for weddings, birthdays, graduations, baptisms and more.">
+    <meta property="og:title" content="Gallery | Eternal Invites">
+    <meta property="og:description" content="Explore physical invitation cards and digital invitations for every occasion.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/config.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+</head>
+<body>
+
+    <!-- ============================== HEADER ============================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Eternal Invites — Home">
+                <img src="assets/images/logo/logo.png" alt="Eternal Invites logo" width="52" height="52">
+                <span class="brand-text">Eternal <em>Invites</em></span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" data-page="index">Home</a></li>
+                    <li><a href="services.html" data-page="services">Services</a></li>
+                    <li><a href="gallery.html" data-page="gallery">Gallery</a></li>
+                    <li><a href="order.html" data-page="order">Order Now</a></li>
+                    <li><a href="about.html" data-page="about">About Us</a></li>
+                    <li><a href="contact.html" data-page="contact">Contact Us</a></li>
+                </ul>
+                <a href="order.html" class="btn btn-gold btn-order-mobile">Order Now</a>
+            </nav>
+            <a href="order.html" class="btn btn-gold btn-sm header-cta">Order Now</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================= PAGE HERO ============================ -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label hero-fade">Gallery</span>
+            <h1 class="hero-fade hero-fade--d1">Our <em class="gold-text">Invitation</em> Collection</h1>
+            <p class="hero-fade hero-fade--d2">Browse physical invitation cards and live digital invitations. Filter by type, occasion or style — or search for something you love.</p>
+            <p class="breadcrumb hero-fade hero-fade--d3"><a href="index.html">Home</a> / Gallery</p>
+        </div>
+    </section>
+
+    <!-- ============================== GALLERY ============================= -->
+    <section class="section section--cream">
+        <div class="container">
+
+            <!-- Toolbar -->
+            <div class="gallery-toolbar reveal">
+                <div class="gallery-search-row">
+                    <div class="gallery-search">
+                        <i data-lucide="search"></i>
+                        <input type="search" id="gallerySearch" placeholder="Search designs, occasions, styles… (e.g. gold, wedding, floral)" aria-label="Search designs">
+                    </div>
+                    <button class="btn btn-ghost-dark btn-sm" id="galleryReset">Reset Filters</button>
+                </div>
+
+                <div class="filter-group">
+                    <span class="filter-group-label">Invitation Type</span>
+                    <div class="filter-chips">
+                        <button class="chip is-active" data-filter="type" data-value="all">All Designs</button>
+                        <button class="chip" data-filter="type" data-value="physical">Physical Invitation Cards</button>
+                        <button class="chip" data-filter="type" data-value="digital">Digital Invitations</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <span class="filter-group-label">Occasion</span>
+                    <div class="filter-chips">
+                        <button class="chip is-active" data-filter="occasion" data-value="all">All</button>
+                        <button class="chip" data-filter="occasion" data-value="wedding">Wedding</button>
+                        <button class="chip" data-filter="occasion" data-value="birthday">Birthday</button>
+                        <button class="chip" data-filter="occasion" data-value="graduation">Graduation</button>
+                        <button class="chip" data-filter="occasion" data-value="baptism">Baptism</button>
+                        <button class="chip" data-filter="occasion" data-value="engagement">Engagement</button>
+                        <button class="chip" data-filter="occasion" data-value="anniversary">Anniversary</button>
+                        <button class="chip" data-filter="occasion" data-value="baby-shower">Baby Shower</button>
+                        <button class="chip" data-filter="occasion" data-value="other">Other</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <span class="filter-group-label">Style</span>
+                    <div class="filter-chips">
+                        <button class="chip is-active" data-filter="style" data-value="all">All</button>
+                        <button class="chip" data-filter="style" data-value="elegant">Elegant</button>
+                        <button class="chip" data-filter="style" data-value="luxury">Luxury</button>
+                        <button class="chip" data-filter="style" data-value="minimalist">Minimalist</button>
+                        <button class="chip" data-filter="style" data-value="modern">Modern</button>
+                        <button class="chip" data-filter="style" data-value="traditional">Traditional</button>
+                        <button class="chip" data-filter="style" data-value="floral">Floral</button>
+                        <button class="chip" data-filter="style" data-value="black and gold">Black &amp; Gold</button>
+                        <button class="chip" data-filter="style" data-value="white and gold">White &amp; Gold</button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="gallery-count" id="galleryCount"></p>
+
+            <!-- Grid -->
+            <div class="designs-grid" id="galleryGrid"></div>
+
+            <!-- Empty state -->
+            <div class="gallery-empty hidden" id="galleryEmpty">
+                <div class="ornament" aria-hidden="true"><i data-lucide="search-x"></i></div>
+                <h3>No designs match your filters</h3>
+                <p>Try a different search word or reset the filters to see the full collection.</p>
+                <button class="btn btn-gold btn-sm" onclick="document.getElementById('galleryReset').click()">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================ CTA =============================== -->
+    <section class="section section--white cta">
+        <div class="container reveal">
+            <div class="ornament" aria-hidden="true"><i data-lucide="flower-2"></i></div>
+            <h2>Found a Design You <em class="gold-text">Love</em>?</h2>
+            <p>Order it as-is, personalize it, or ask us to create something completely new.</p>
+            <a href="order.html" class="btn btn-gold">Start Your Order</a>
+        </div>
+    </section>
+
+    <!-- =============================== FOOTER ============================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo/logo.png" alt="Eternal Invites logo" width="64" height="64">
+                    <div class="brand-name">Eternal <em>Invites</em></div>
+                    <p class="footer-tagline">Your Story, Beautifully Invited.</p>
+                    <p>Made with creativity for your unforgettable moments.</p>
+                    <div class="footer-social">
+                        <a data-social="tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+                        <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a data-social="telegram" href="#" target="_blank" rel="noopener" aria-label="Telegram"><i data-lucide="send"></i></a>
+                    </div>
+                </div>
+                <nav aria-label="Quick links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Service links">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html?type=physical">Physical Invitation Cards</a></li>
+                        <li><a href="gallery.html?type=digital">Digital Invitations</a></li>
+                        <li><a href="index.html#packages">Digital Packages</a></li>
+                        <li><a href="order.html">Custom Design Request</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i data-lucide="phone"></i><a data-contact="phone" href="#">0941187172</a></li>
+                        <li data-contact="email-wrap"><i data-lucide="mail"></i><a data-contact="email" href="#"></a></li>
+                        <li data-contact="location-wrap"><i data-lucide="map-pin"></i><span data-contact="location"></span></li>
+                        <li><i data-lucide="music-2"></i><a data-social="tiktok" href="#" target="_blank" rel="noopener"><span data-username>@eternal_invites</span></a></li>
+                        <li><i data-lucide="instagram"></i><a data-social="instagram" href="#" target="_blank" rel="noopener"><span data-username>@eternal_invites</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span data-year>2026</span> <span>Eternal Invites</span> — All rights reserved. Made with creativity for your unforgettable moments.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================= DESIGN DETAIL MODAL ====================== -->
+    <div class="modal-overlay" id="designModal" role="dialog" aria-modal="true" aria-label="Design details">
+        <div class="modal">
+            <button class="modal-close" aria-label="Close design details"><i data-lucide="x"></i></button>
+            <div class="modal-grid">
+                <div class="modal-media"></div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

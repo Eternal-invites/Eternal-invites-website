@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Eternal Invites</title>
+    <meta name="description" content="Contact Eternal Invites for physical invitation cards and digital invitations. Call, message on TikTok or Instagram, or send us a message online.">
+    <meta property="og:title" content="Contact Us | Eternal Invites">
+    <meta property="og:description" content="Get in touch with Eternal Invites — we would love to hear about your celebration.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/config.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+<body>
+
+    <!-- ============================== HEADER ============================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Eternal Invites — Home">
+                <img src="assets/images/logo/logo.png" alt="Eternal Invites logo" width="52" height="52">
+                <span class="brand-text">Eternal <em>Invites</em></span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" data-page="index">Home</a></li>
+                    <li><a href="services.html" data-page="services">Services</a></li>
+                    <li><a href="gallery.html" data-page="gallery">Gallery</a></li>
+                    <li><a href="order.html" data-page="order">Order Now</a></li>
+                    <li><a href="about.html" data-page="about">About Us</a></li>
+                    <li><a href="contact.html" data-page="contact">Contact Us</a></li>
+                </ul>
+                <a href="order.html" class="btn btn-gold btn-order-mobile">Order Now</a>
+            </nav>
+            <a href="order.html" class="btn btn-gold btn-sm header-cta">Order Now</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================= PAGE HERO ============================ -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-label hero-fade">Contact Us</span>
+            <h1 class="hero-fade hero-fade--d1">We Would Love to <em class="gold-text">Hear From You</em></h1>
+            <p class="hero-fade hero-fade--d2">Questions about a design, a package, or a custom idea? Reach out — we respond personally.</p>
+            <p class="breadcrumb hero-fade hero-fade--d3"><a href="index.html">Home</a> / Contact Us</p>
+        </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================= -->
+    <section class="section section--cream">
+        <div class="container">
+            <div class="contact-layout">
+
+                <!-- Contact info -->
+                <div class="contact-info-card reveal">
+                    <h3>Get in Touch</h3>
+                    <p style="color:var(--text-on-dark-muted); font-size:0.94rem">The fastest way to reach us is by phone or our social channels.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <strong>Phone</strong>
+                            <a data-contact="phone" href="#">0941187172</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-contact="email-wrap">
+                        <div class="contact-item-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <strong>Email</strong>
+                            <a data-contact="email" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-contact="location-wrap">
+                        <div class="contact-item-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <strong>Location</strong>
+                            <span data-contact="location"></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i data-lucide="clock"></i></div>
+                        <div>
+                            <strong>Response Time</strong>
+                            <span>We reply as soon as we can — usually the same day.</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a data-social="tiktok" href="#" target="_blank" rel="noopener"><i data-lucide="music-2"></i> TikTok</a>
+                        <a data-social="instagram" href="#" target="_blank" rel="noopener"><i data-lucide="instagram"></i> Instagram</a>
+                        <a data-social="telegram" href="#" target="_blank" rel="noopener"><i data-lucide="send"></i> Telegram</a>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <form id="contactForm" class="form-card reveal" novalidate>
+                    <h3 style="font-size:1.8rem; margin-bottom:20px">Send Us a Message</h3>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="cName">Name <span class="req">*</span></label>
+                            <input type="text" id="cName" name="name" required autocomplete="name">
+                            <span class="field-error">Please enter your name.</span>
+                        </div>
+                        <div class="form-field">
+                            <label for="cContact">Phone or Email <span class="req">*</span></label>
+                            <input type="text" id="cContact" name="contact" required placeholder="Your phone number or email">
+                            <span class="field-error">Please enter a valid phone number or email.</span>
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="cSubject">Subject</label>
+                            <input type="text" id="cSubject" name="subject" placeholder="e.g. Question about the Deluxe package">
+                        </div>
+                        <div class="form-field form-field--full">
+                            <label for="cMessage">Message <span class="req">*</span></label>
+                            <textarea id="cMessage" name="message" required placeholder="Tell us about your event or question…"></textarea>
+                            <span class="field-error">Please write your message.</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-gold" id="contactSubmit" style="margin-top:22px">Send Message</button>
+                    <div class="form-status" id="contactStatus" role="status" aria-live="polite" style="margin-top:18px"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================ FAQ =============================== -->
+    <section class="section section--white">
+        <div class="container" style="max-width:860px">
+            <header class="section-head reveal">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+            </header>
+
+            <div class="faq-item reveal">
+                <button class="faq-question" aria-expanded="false">
+                    What is the difference between physical and digital invitations?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner">
+                    A physical invitation is a beautifully printed card your guests can hold and keep. A digital invitation is an interactive webpage — with photos, countdown, location, program and more — that you share instantly as a link on any phone.
+                </div></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" aria-expanded="false">
+                    Can I customize an existing design?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner">
+                    Yes. Every design can be personalized with your names, wording, colors, photographs and event details — in Amharic, English, or both.
+                </div></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" aria-expanded="false">
+                    Can I request a completely new design?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner">
+                    Absolutely. Select "Custom Design Request" on the Order page and share your preferred style, colors and any reference images. We will create an invitation just for you.
+                </div></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" aria-expanded="false">
+                    What is included in each digital package?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner">
+                    <strong>Basic — 4,500 birr:</strong> basic event information, 4 photos, location, countdown timer.<br>
+                    <strong>Premium — 5,500 birr:</strong> basic event information, 8 photos, location, events in the program, countdown timer.<br>
+                    <strong>Deluxe — 7,000 birr:</strong> everything in Premium plus 10 photos in a photo gallery, RSVP form, guests' wishes and background music.
+                </div></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" aria-expanded="false">
+                    How do I place an order?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner">
+                    Use the Order Now page to submit your details, or simply call us. Every order is an inquiry — we personally confirm the design, details, price and availability with you before work begins.
+                </div></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" aria-expanded="false">
+                    How do I receive my digital invitation?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner">
+                    Your finished invitation is delivered as a personal link that you can share with guests through messaging apps and social media. Please contact us for the exact delivery arrangement for your order.
+                </div></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" aria-expanded="false">
+                    How are physical printing and delivery arranged?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner">
+                    Printing, quantities, finishes and delivery or collection are arranged per order. Contact us with your design and quantity and we will confirm the details and final price for you.
+                </div></div>
+            </div>
+            <div class="faq-item reveal">
+                <button class="faq-question" aria-expanded="false">
+                    How can I contact Eternal Invites?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer"><div class="faq-answer-inner">
+                    Call us at <a href="tel:+251941187172">0941187172</a>, or message us on TikTok or Instagram at <strong>@eternal_invites</strong>. We are happy to help you choose the perfect invitation.
+                </div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================ CTA =============================== -->
+    <section class="section section--cream cta">
+        <div class="container reveal">
+            <div class="ornament" aria-hidden="true"><i data-lucide="flower-2"></i></div>
+            <h2>Ready to Create Something <em class="gold-text">Beautiful</em>?</h2>
+            <p>Your celebration starts with the perfect invitation.</p>
+            <a href="order.html" class="btn btn-gold">Start Your Order</a>
+        </div>
+    </section>
+
+    <!-- =============================== FOOTER ============================= -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo/logo.png" alt="Eternal Invites logo" width="64" height="64">
+                    <div class="brand-name">Eternal <em>Invites</em></div>
+                    <p class="footer-tagline">Your Story, Beautifully Invited.</p>
+                    <p>Made with creativity for your unforgettable moments.</p>
+                    <div class="footer-social">
+                        <a data-social="tiktok" href="#" target="_blank" rel="noopener" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+                        <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a data-social="telegram" href="#" target="_blank" rel="noopener" aria-label="Telegram"><i data-lucide="send"></i></a>
+                    </div>
+                </div>
+                <nav aria-label="Quick links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Service links">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html?type=physical">Physical Invitation Cards</a></li>
+                        <li><a href="gallery.html?type=digital">Digital Invitations</a></li>
+                        <li><a href="index.html#packages">Digital Packages</a></li>
+                        <li><a href="order.html">Custom Design Request</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i data-lucide="phone"></i><a data-contact="phone" href="#">0941187172</a></li>
+                        <li data-contact="email-wrap"><i data-lucide="mail"></i><a data-contact="email" href="#"></a></li>
+                        <li data-contact="location-wrap"><i data-lucide="map-pin"></i><span data-contact="location"></span></li>
+                        <li><i data-lucide="music-2"></i><a data-social="tiktok" href="#" target="_blank" rel="noopener"><span data-username>@eternal_invites</span></a></li>
+                        <li><i data-lucide="instagram"></i><a data-social="instagram" href="#" target="_blank" rel="noopener"><span data-username>@eternal_invites</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span data-year>2026</span> <span>Eternal Invites</span> — All rights reserved. Made with creativity for your unforgettable moments.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
