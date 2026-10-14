@@ -233,7 +233,7 @@
                     window.SITE_CONFIG.packages.map(function (p) {
                         return "<li>" + p.name + " — " + window.formatPrice(p) + "</li>";
                     }).join("") + "</ul>" +
-                    '<a class="btn btn-outline-gold btn-sm" href="order.html?type=digital&occasion=' + d.occasion + '#packages">Compare Packages</a></div>';
+                    '<a class="btn btn-outline-gold btn-sm" href="order.html?type=digital&occasion=' + d.occasion + '">Compare Packages</a></div>';
             } else {
                 pkgInfo = '<div class="modal-options"><h4>Pricing</h4><ul><li>Request a Quote — final price is confirmed after your details are reviewed.</li></ul></div>';
             }
