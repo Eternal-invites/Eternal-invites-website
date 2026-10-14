@@ -102,14 +102,7 @@
                 </div>
             </div>
 
-            <div style="margin-top:70px">
-                <div class="section-head section-head--left">
-                    <span class="section-label section-label--left">Real Work</span>
-                    <h3 class="section-title" style="font-size:1.8rem">Physical Card Samples</h3>
-                </div>
-                <div class="designs-grid" id="servicesPhysicalGrid"></div>
-                <p class="form-hint" style="margin-top:18px">Physical card pricing is confirmed per order — printing, delivery and quantities depend on the confirmed service. <a href="order.html?type=physical">Request a quote</a>.</p>
-            </div>
+            <p class="form-hint reveal" style="margin-top:70px">Physical card pricing is confirmed per order — printing, delivery and quantities depend on the confirmed service. <a href="order.html?type=physical">Request a quote</a>.</p>
         </div>
     </section>
 
@@ -264,16 +257,5 @@
         </div>
     </div>
 
-    <!-- Page-specific: render physical samples -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var g = document.getElementById("servicesPhysicalGrid");
-            g.innerHTML = window.DESIGNS
-                .filter(function (d) { return d.type === "physical" && !d.concept; })
-                .map(window.designCardHTML)
-                .join("");
-            g.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-visible"); });
-        });
-    </script>
 </body>
 </html>
